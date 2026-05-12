@@ -38,29 +38,30 @@
     <main>
       <article>
         <header>
-          <picture class="container-fluid px-0">
+          <picture class="container-fluid px-0 container-article">
           <source srcset="./assets/images/articlebackground.jpg?height=1000&as=avif 1x ,
           ./assets/images/articlebackground.jpg?height=2000&as=avif 2x">
-          <img src="assets/images/articlebackground.jpg" alt="Imagen de fondo blanco, muestra diferentes tipos de carretes de hilo de color azul.">
+          <img class="container-article__image" src="assets/images/articlebackground.jpg" alt="Imagen de fondo blanco, muestra diferentes tipos de carretes de hilo de color azul.">
           </picture>
 
           <div class="container-small">
-          <h1>Entre Hilos y Herencia</h1>
-          <p>Por <adress>Elena M.</adress></p>
+          <h1>Entre hilos y recuerdos</h1>
+          <p class="author">Por Elena Rivas</p>
           </div>
         </header>
           
         <section class="container-small">
-            <div class="d-flex">
-              <blockquote class="w-75">
+            <div class="d-flex gap-5 mb-4">
+              <blockquote>
                 "El hilo es la línea más corta entre la intención del corazón y la creación de las manos."
               </blockquote>
-              <p class="w-100">
-                A veces me detengo frente a la estantería donde guardo los carretes y simplemente observo. No veo solo colores; veo posibilidades. Cada cilindro de madera envuelto en algodón o lino es el principio de una conversación que aún no ha sucedido. La artesanía textil no es solo entrelazar fibras, es una forma de resistencia en un mundo que corre demasiado rápido.
+              <p class="blockquote--dark">
+                A veces me detengo frente a la estantería donde guardo los carretes y simplemente observo. No veo solo colores; veo posibilidades. Cada cilindro de madera envuelto en algodón o lino es el principio de una conversación que aún no ha sucedido.
+                La sensación de crear algo desde cero con tus propias manos es indescriptible.
               </p>
             </div>
 
-            <ol class="custom-list">
+            <ol class="custom-list border-top border-bottom pt-4 pb-4">
               <li class="custom-list__item">
                 <div class="custom-list__content">
                 <h3 class="custom-list__title">La selección del núcleo</h3> 
@@ -87,29 +88,29 @@
                 </p> 
                 </div>
               </li>
-            </0l>
+            </ol>
             
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap mt-4">
               <blockquote>
                 "En cada puntada hay un silencio que dice más que mil palabras terminadas."
               </blockquote>
 
-              <p>
+              <p class="blockquote--dark mb-5">
               Cuando selecciono la paleta para un nuevo tapiz, el primer paso es siempre sensorial. Tocar la rugosidad del lino, sentir la suavidad de la lana merino... es ahí donde el diseño empieza a cobrar vida. La imagen de cientos de carretes alineados es mi mayor fuente de inspiración: un recordatorio de que, aunque el hilo parezca frágil por sí solo, bajo la tensión adecuada y el ritmo del telar, se convierte en algo eterno.
-            </p>
+              </p>
             </div>
         </section>
 
         <section>
-          <picture class="container">
+          <picture class="container d-block container-article">
             <source srcset="
             assets/images/telar.jpg?height=500&as=avif 1x ,
             assets/images/telar.jpg?height=1000&as=avif 2x
             ">
-            <img src="assets/images/telar.jpg" alt="tapiz">
+            <img class="container-article__image" src="assets/images/telar.jpg" alt="tapiz">
           </picture>
 
-          <div class="container-small">
+          <div class="container-small mb-5">
 
             <p>
               Mucha gente se sorprende de que tarde semanas en terminar una sola pieza pequeña. Pero la artesanía me ha enseñado que el tiempo es un material más, tan importante como el algodón mismo. No se puede apresurar el secado de un tinte natural ni la caída de una tela recién sacada del bastidor. En ese tiempo de espera es donde realmente nos encontramos a nosotros mismos.
