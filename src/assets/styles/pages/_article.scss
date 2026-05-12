@@ -1,7 +1,7 @@
 @use "../variables";
 @use "../dependencies" as *;
 
-// Uso de pseudoclase :is para alinear h1 y h2 en article
+// Uso de pseudoclase :is para alinear h1 en article
 article :is(h1) {
   text-align: center;
   margin-top: 40px;
