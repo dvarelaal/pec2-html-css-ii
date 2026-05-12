@@ -22,7 +22,7 @@ article :is(h1, h2) {
   position: relative;
 }
 
-
+// Creación de los números
 .custom-list__item::before {
   content: counter(item-counter);
   display: flex;

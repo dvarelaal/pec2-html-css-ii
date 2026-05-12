@@ -35,8 +35,38 @@
       </div>
     </nav>
 
-    <main>
+    <main class="container-fluid p-0">
+      <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <picture class="carousel-item active">
+            <source srcset="assets/images/carousel-1.jpg?height=500&as=avif 1x ,
+            assets/images/carousel-1.jpg?height=1000&as=avif 2x ,
+            ">
+            <img class="d-block w-100" src="assets/images/carousel-1.jpg" alt="First slide">
+          </picture>
 
+          <picture class="carousel-item">
+            <source srcset="assets/images/carousel-2.jpg?height=500&as=avif 1x ,
+            assets/images/carousel-2.jpg?height=1000&as=avif 2x" 
+            type="image/avif">
+            <img class="d-block w-100" src="assets/images/carousel-2.jpg" alt="Second slide">
+          </picture>
+
+          <picture class="carousel-item">
+            <source srcset="assets/images/carousel-3.jpg?height=500&as=avif 1x ,
+            assets/images/carousel-3.jpg?height=1000&as=avif 2x" 
+            type="image/avif">
+            <img class="d-block w-100" src="assets/images/carousel-3.jpg" alt="Third slide">
+          </picture>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
     </main>
 
     <include src="./views/footer.html"></include>

@@ -29,3 +29,12 @@ gsap.registerPlugin(ScrollTrigger,SplitText);
  */
 
 
+// hacer que ".js-display" salga con una animacion wavy con color al cargar la página
+const split = SplitText.create(".js-display", { type: "chars" });
+
+gsap.from(split.chars, {
+  y: 40, color: "#4C63DD", opacity: 0,
+  stagger: { each: 0.04, from: "start" },
+  duration: 0.6, ease: "sine.out"
+});
+
