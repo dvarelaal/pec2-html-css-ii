@@ -1,0 +1,11 @@
+@use "../variables";
+
+// Botón usado en el hero
+.hero__btn {
+  @supports (display: grid) {
+    grid-row: 3;
+    grid-column: 3;
+    text-align: right;
+    width: 100%;
+  } 
+}

@@ -1,0 +1,26 @@
+@use "../variables";
+@use "../dependencies" as *;
+
+.logotipo {
+  font-family: variables.$display-brand-font;
+}
+
+.hero__text {
+  @include font-size(2cqw);
+  color: variables.$light;
+}
+
+.hero__info {
+  @include font-size(1.5cqw);
+  color: variables.$light;
+  text-transform: uppercase;
+}
+
+.custom-list__title {
+  @include font-size(1.5rem);
+  margin-bottom: 1rem;
+}
+
+.custom-list__text {
+  color: variables.$secondary;
+}

@@ -1,0 +1,22 @@
+@use "../variables";
+@use "../dependencies" as *;
+
+// Container con menor tamaño
+.container-small {
+  @include make-container();
+  max-width: 800px;
+  overflow-y: hidden;
+}
+
+// container para la sección hero en index.html
+.container-hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  container-type: inline-size;
+}

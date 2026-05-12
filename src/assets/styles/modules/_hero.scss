@@ -1,0 +1,61 @@
+@use "../variables";
+@use "../dependencies" as *;
+
+.hero {
+  // SVG con imagen por encima del grid de hero
+  &__image {
+    position: absolute;
+    z-index: 2;
+  }
+
+  // Texto del fondo "Everyday" en hero
+  &__title {
+    @include font-size(20cqw); //uso del mixin de bootstrap para definir sizes y mantener el responsive
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+    color: variables.$light;
+  }
+
+  //grid en hero
+  &__grid {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 3;
+    top: 15cqh;
+    
+
+    @supports (display: grid) {
+        display: grid;
+        grid-template-columns: 40% 1fr 15%;
+        grid-template-rows: 1fr 21cqw 1fr;
+        height: 90vh;
+        position: relative;
+        z-index: 3;
+        top: auto;
+    }
+  }
+
+  &__text {
+    @supports (display:grid) {
+      grid-row: 1;
+      grid-column: 3;
+      text-align: right;
+      align-self: end;
+    }
+}
+
+  &__info {
+    @supports (display: grid) {
+      grid-row: 1;
+      align-self: end;
+    }
+  }  
+
+}
+
+
+

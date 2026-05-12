@@ -1,0 +1,30 @@
+// Cambio de variables de uso de colores de Bootstrap
+$primary: #4C63DD;
+$secondary: #928B9B;
+$danger: #E55733;
+$dark: #161616;
+$light: #f8f9fa;
+
+//colores personalizados
+$tertiary: #C6D965;
+
+// Cambio de colores en el tema principal
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+// Tipografías personalizadas 
+$brand-font: 'Montserrat Variable', sans-serif;
+$display-brand-font: 'Archivo Black', sans-serif;
+
+// Cambio de variables de tipografías
+$font-family-base: $brand-font;
+$display-font-family: $display-brand-font;
+$headings-font-family: $display-brand-font;
+
+

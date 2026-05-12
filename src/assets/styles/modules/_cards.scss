@@ -1,0 +1,34 @@
+@use "../variables";
+
+// Estilo para clase card base en bootstrap
+.card {
+  width: 22rem;
+  border: none;
+
+  &:has(.card-body) .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-body :is(h5, p) {
+    text-align: center;
+    color: variables.$danger;
+  }
+
+  &-img-top {
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+
+    & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+  }
+  
+}
+
+
